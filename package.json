@@ -1,0 +1,29 @@
+{
+  "name": "auto-invest-monorepo",
+  "version": "1.0.0",
+  "description": "Upbit 코인 자동 투자 AI 프로그램 - Monorepo",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter backend dev\" \"pnpm --filter frontend dev\"",
+    "dev:backend": "pnpm --filter backend dev",
+    "dev:frontend": "pnpm --filter frontend dev",
+    "build": "pnpm --filter backend build && pnpm --filter frontend build",
+    "start:backend": "pnpm --filter backend start",
+    "start:frontend": "pnpm --filter frontend preview",
+    "lint": "pnpm -r lint",
+    "clean": "pnpm -r clean && rm -rf node_modules"
+  },
+  "keywords": [
+    "upbit",
+    "cryptocurrency",
+    "auto-trading",
+    "ai",
+    "investment",
+    "monorepo"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
